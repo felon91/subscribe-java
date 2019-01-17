@@ -1,0 +1,134 @@
+.bottom {
+  position: relative;
+  background:
+          url('../../images/freejava/men-right.png') 95% calc(100% - 105px) no-repeat,
+          linear-gradient(180deg, #2459FF 0%, #0033D4 100%);
+}
+
+.bottom__wrap {
+  padding-bottom: 100px;
+}
+
+.bottom__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom__course {
+  max-width: 100%;
+  display: block;
+}
+
+.bottom__java {
+  font-family: Montserrat;
+  font-weight: 900;
+  line-height: 93px;
+  font-size: 95px;
+  text-align: right;
+  color: $primary;
+  margin: 0px 115px 20px 0;
+
+}
+
+.bottom__title {
+  color: $white;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 760px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.bottom__form {
+  max-width: 470px;
+  flex-basis: 470px;
+  flex-shrink: 0;
+  margin-right: 100px;
+  align-self: flex-start;
+  margin-top: 50px;
+}
+
+@media (min-width: 1920px) {
+
+  .bottom {
+    background: linear-gradient(180deg, #2459FF 0%, #0033D4 100%);
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .bottom__wrap {
+    background: none;
+  }
+
+  .bottom__form {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .bottom {
+    background: linear-gradient(180deg, #2459FF 0%, #0033D4 100%);
+  }
+
+  .bottom__java {
+    margin-right: 55px;
+    font-size: 55px;
+    line-height: 65px;
+  }
+
+}
+
+@media (max-width: 880px) {
+
+  .bottom__wrap {
+    padding-bottom: 50px;
+  }
+
+  .bottom__title {
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .bottom__flex {
+    flex-direction: column;
+  }
+
+  .bottom__img {
+    margin: 0 auto 20px;
+  }
+
+  .bottom__form {
+    flex-basis: auto;
+    flex-shrink: 1;
+    max-width: 100%;
+  }
+
+  .bottom__java {
+    text-align: center;
+    margin-right: 0;
+
+    br {
+      display: none;
+    }
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .bottom__title {
+    font-size: 26px;
+  }
+
+}

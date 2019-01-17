@@ -1,0 +1,156 @@
+.header {
+  position: relative;
+  background:
+          url('../../images/freejava/mens.png') center calc(100% - 113px) no-repeat,
+          url('../../images/freejava/volna.png') 15% bottom no-repeat,
+          linear-gradient(180deg, #F9B231 0%, #F37500 100%);
+}
+
+.header__wrap {
+  padding-bottom: 100px;
+  position: relative;
+
+  &::after {
+    content: '';
+    background: url('../../images/freejava/romb.svg') center bottom no-repeat;
+    width: 116px;
+    height: 116px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: -58px;
+    transform: translateX(-50%);
+  }
+
+}
+
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__course {
+  max-width: 100%;
+  display: block;
+  margin-left: 90px;
+}
+
+.header__title {
+  color: $primary;
+  font-family: Montserrat;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 95px;
+  margin: 0;
+  margin-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url('../../images/freejava/polka.png') right 50px no-repeat;
+}
+
+.header__span {
+  font-weight: 700;
+  font-size: 49px;
+  color: $white;
+  display: block;
+}
+
+.header__form {
+  max-width: 470px;
+  flex-basis: 470px;
+  margin-right: 100px;
+  align-self: flex-start;
+}
+
+@media (min-width: 1920px) {
+
+  .header__android {
+    display: none;
+  }
+
+  .header__men {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1600px) {
+
+  .header {
+    background:
+            url('../../images/freejava/mens.png') center calc(100% - 113px) no-repeat,
+            url('../../images/freejava/volna.png') right 130% no-repeat,
+            linear-gradient(180deg, #F9B231 0%, #F37500 100%);
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .header__title {
+    margin-left: 0;
+  }
+
+  .header__course {
+    margin-left: 0;
+  }
+
+  .header__form {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  
+  .header__title {
+    background: none;
+  }
+
+}
+
+@media (max-width: 880px) {
+
+  .header__wrap {
+    padding-bottom: 80px;
+  }
+
+  .header__title {
+    font-size: 65px;
+  }
+
+  .header__span {
+    font-size: 35px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .header__flex {
+    flex-direction: column;
+  }
+
+  .header__img {
+    margin: 0 auto 20px;
+  }
+
+  .header__form {
+    flex-basis: auto;
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .header__title {
+    font-size: 45px;
+  }
+
+  .header__span {
+    font-size: 26px;
+  }
+
+}

@@ -1,0 +1,80 @@
+$fillSvg: #363F40;
+
+.feature__title {
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 53px;
+  text-align: center;
+  color: $black;
+  margin: 70px 0 20px;
+}
+
+.feature__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  counter-reset: olItemCounter;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.feature__element {
+  flex-basis: 23.07%;
+  position: relative;
+  margin: 25px 0;
+
+  &::before {
+    counter-increment: olItemCounter;
+    content: counter(olItemCounter)'.';
+    font-family: Montserrat;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #F9C25D;
+    position: absolute;
+    top: 20px;
+    left: 65px;
+  }
+
+}
+
+.feature__svg {
+  height: 96px;
+  width: 100%;
+  fill: $fillSvg;
+  position: relative;
+  z-index: 1;
+}
+
+.feature__descr {
+  max-width: 210px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 18px;
+  letter-spacing: -0.1px;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+
+  .feature__title {
+    font-size: 34px;
+  }
+
+  .feature__element {
+    flex-basis: 48%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .feature__element {
+    flex-basis: 100%;
+  }
+
+}
